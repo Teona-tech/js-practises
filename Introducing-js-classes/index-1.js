@@ -18,17 +18,17 @@ class Student extends User{
         var today = new Date();
         var yyyy = today.getFullYear();
         var course = yyyy-this.year;
-        if (course <= 4 ){
+        if (course <= 4 && course>0 ){
             return course;
-        }else{
-            return "შეგტენვია საგნები";
 
+        }else{
+            return "you are not a student";
         }
     }
 
 }
 
-var student = new Student("proto","javaxishvili",2016);
+var student = new Student("proto","javaxishvili",2020);
 console.log(student.name);
 console.log(student.surname);
 console.log(student.year);
