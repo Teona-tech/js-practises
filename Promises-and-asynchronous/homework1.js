@@ -2,7 +2,7 @@ const send = url => new Promise((resolve,reject) =>
 get(url, (error, meta, body) => {
    if(meta.status !== 200){
     let statusCode = meta.status;
-    reject ('We have error, status code: ${statusCode}');
+    reject (`We have error, status code: ${statusCode}`);
 
    }
    else {
