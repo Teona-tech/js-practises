@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <img src="https://play-lh.googleusercontent.com/do_dLJoXHneSBhrEEowUGv6iyBclq1LfEnSrhycE2R5tD2Z80KW3AJSrMQq3o1XbJIg" width='250px' height="180px" id="img"><br/>
+    <button onclick='changeImage()'>CLICK ME!</button>
+    <p id = "p"></p>
+    <p>და ერეის სიგრძე არის ქვევით </p>
+    <p id="length"></p>
+    <script>
+       function changeImage(){
+                var arr = ["https://pbs.twimg.com/profile_images/941628542449745921/eyTWR9Sk.jpg",
+                          "https://bm.ge/uploads/news/5e2ae6a60018f.png",
+                          "https://www.tbcbank.ge/web/documents/10184/0/tbc-share-image.png",
+                          "https://www.efse.lu/fileadmin/user_upload/_processed_/0/5/csm_TBC_Bank_Logo_b1b29f9233.jpg",
+                          "https://old.cbw.ge/wp-content/uploads/2019/04/A5-09-2-660x330.jpg"];
+                var x = Math.floor(Math.random() * 5);
+                document.getElementById("img").setAttribute('src',arr[x]);
+                document.getElementById("p").innerHTML = x;
+                document.getElementById("length").innerHTML = arr.length;
+                
+       }
+    </script>
+  </body>
+</html>
